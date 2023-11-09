@@ -1,4 +1,6 @@
 import { useState } from "react";
+import ModalColorPick from "../ModalColorPick/ModalColorPick";
+import { Button } from "react-bootstrap";
 
 
 const ButtonColorPick = () => {
@@ -19,8 +21,8 @@ const ButtonColorPick = () => {
                 <h2> Ejemplo 3</h2>
 
                 {/*Componente Padre*/}
-                <button variant="primary" style={{backgroundColor: buttonColor}}
-                onClick={handleShowModal}> </button>
+                <Button variant="primary" style={{backgroundColor: buttonColor}}
+                onClick={handleShowModal}> Cambiar color </Button>
 
                 {/*Componente Hijo*/}
                 {showModal && <ModalColorPick
